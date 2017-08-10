@@ -443,7 +443,9 @@ footer {
     height: 70%;
     /* increases the carousel height so it looks good on phones */ } }
 
-* {
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .navbar {
@@ -477,3 +479,39 @@ footer {
 
 body h1 {
   color: white; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both; }
+
+.lead {
+  margin: 0 -20px; }
+
+.img-responsive {
+  width: 100%; }
+
+.row {
+  clear: both;
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  padding: 0 1.04167%; }
+
+.col-lg-12 {
+  width: 100%;
+  padding: 0; }
+
+.col-lg-6 {
+  width: 50%; }
+
+.col-lg-4 {
+  width: 33.33333%; }
